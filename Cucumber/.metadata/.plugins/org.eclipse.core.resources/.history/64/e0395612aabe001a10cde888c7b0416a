@@ -1,5 +1,0 @@
-CucumberResultsOverview results = new CucumberResultsOverview();
-results.setOutputDirectory("target");
-results.setOutputName("cucumber-results");
-results.setSourceFile("./src/test/resources/cucumber.json");
-results.executeFeaturesOverviewReport();
