@@ -1,0 +1,31 @@
+package managers;
+
+import org.openqa.selenium.WebDriver;
+
+import dataProvider.ConfigFileReader;
+
+public class WebDriverManager {
+
+	 private WebDriver driver;
+	 private static final String CHROME_DRIVER_PROPERTY = "webdriver.chrome.driver";
+	 private static final String FIREFOX_DRIVER_PROPERTY = "webdriver.gecko.driver";
+	 ConfigFileReader configFileReader;
+	 private static String driverType;
+	 
+	 public WebDriverManager() {
+		 configFileReader = FileReaderManager.getInstance();
+		 driverType = configFileReader.getproperty("browser");
+		 
+	}
+	 
+	 public WebDriver getDriver() {
+		 if(driver == null) driver = 
+		 }
+	 
+	 private WebDriver createDriver() {
+		 if (driverType.equalsIgnoreCase("firefox")) {
+			 System.setProperty("webdriver.gecko.driver", "/Users/naveenkhunteta/Documents/SeleniumServer/geckodriver");	
+				driver = new FirefoxDriver();
+		 }
+	 }
+}

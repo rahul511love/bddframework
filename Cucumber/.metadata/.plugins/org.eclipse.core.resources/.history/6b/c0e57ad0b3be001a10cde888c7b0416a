@@ -1,0 +1,14 @@
+chromePath=C:\\BDD browsers\\chromedriver.exe
+gekoPath=C:\\BDD browsers\\geckodriver.exe
+implicitlyWait=15
+url=http://automationpractice.com/index.php
+
+username=testautomationbdd@aol.com
+password=password123test
+
+myAccountTitle=My account - My Store
+
+browser=chrome
+environment=Test1
+
+reportConfigPath=C:/Users/Rahul/BDDFramework/cucumberFramework/configs/extent-config.xml

@@ -1,0 +1,25 @@
+package managers;
+
+import org.openqa.selenium.WebDriver;
+
+import dataProvider.ConfigFileReader;
+
+public class WebDriverManager {
+
+	 private WebDriver driver;
+	 private static final String CHROME_DRIVER_PROPERTY = "webdriver.chrome.driver";
+	 ConfigFileReader configFileReader;
+	 private static String driverType;
+	 private static String environmentType;
+	 
+	 public WebDriverManager() {
+		 configFileReader = FileReaderManager.getInstance();
+		 driverType = configFileReader.getproperty("browser");
+		 environmentType = configFileReader.getproperty("environment");
+		 
+	}
+	 
+	 public WebDriver getDriver() {
+		 if(driver == null) driver = 
+		 }
+}

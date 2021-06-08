@@ -1,0 +1,113 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 9433078800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.initialization()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Customer is placing an order",
+        "description": "",
+        "id": "to-automate-end2end-tests;customer-is-placing-an-order",
+        "after": [
+          {
+            "result": {
+              "duration": 65600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 714811900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2885184500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User hits the URL",
+            "match": {
+              "location": "Steps.user_hits_the_URL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 156778200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User inputs username",
+            "match": {
+              "location": "Steps.user_inputs_username()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 104016700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User input Password",
+            "match": {
+              "location": "Steps.user_input_Password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1766229500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User click on login button",
+            "match": {
+              "location": "Steps.user_click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 22804100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User lands on Home page",
+            "match": {
+              "location": "Steps.user_lands_on_Home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "To Automate End2End Tests",
+    "description": "\r\nDescription: The purpose of this features is automate end to end scenario.",
+    "id": "to-automate-end2end-tests",
+    "keyword": "Feature",
+    "uri": "End2EndTest.feature"
+  }
+]

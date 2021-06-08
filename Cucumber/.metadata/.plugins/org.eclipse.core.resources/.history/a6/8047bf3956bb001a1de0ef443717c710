@@ -1,0 +1,25 @@
+package pageFactory;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+
+public class LoginPage {
+
+	WebDriver driver;
+	
+	@FindBy(how = How.XPATH, using = "//a[@class='login']")
+	public static WebElement loginbutton;
+	
+	@FindBy(how = How.XPATH, using = "//input[@id='email']")
+	public static WebElement username;
+	
+	@FindBy(how = How.XPATH, using = "//input[@id='passwd']")
+	public static WebElement password;
+	
+	@FindBy(how = How.ID, using = "SubmitLogin")
+	public static WebElement loginclick;
+	
+	
+}

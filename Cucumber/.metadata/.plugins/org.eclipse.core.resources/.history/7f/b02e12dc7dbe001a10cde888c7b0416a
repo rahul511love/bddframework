@@ -1,0 +1,38 @@
+package runners;
+
+import java.io.File;
+
+import org.junit.AfterClass;
+import org.junit.runner.RunWith;
+
+import com.github.mkolisnyk.cucumber.runner.ExtendedCucumber;
+import com.github.mkolisnyk.cucumber.runner.ExtendedCucumberOptions;
+
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+
+import managers.FileReaderManager;
+
+//@RunWith(Cucumber.class)
+/*@CucumberOptions(
+ features = "src/test/resources/automationTests",
+ glue= {"stepdefinitions"},
+ plugin = {"com.cucumber.listener.ExtentCucumberFormatter:output/report.html"}
+ )*/
+@RunWith(ExtendedCucumber.class)
+@ExtendedCucumberOptions(
+        jsonReport = "target/cucumber.json",
+        detailedReport = true,
+        detailedAggregatedReport = true,
+        toPDF = true,
+        outputFolder = "target/LoginReport/ExtendedReport")
+@CucumberOptions(
+        features = "src/test/resources/automationTests",
+        glue = {"stepdefinitions"}, plugin = {
+        "html:target/LoginReport", "json:target/cucumber.json",
+        "pretty:target/cucumber-pretty.txt",
+        "usage:target/cucumber-usage.json", "junit:target/cucumber-results.xml" })
+
+public class TestRunner {
+
+}
